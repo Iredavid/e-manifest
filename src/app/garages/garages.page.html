@@ -1,0 +1,38 @@
+
+<ion-header class="custom-header" mode="ios">
+  <ion-toolbar class="custom-toolbar">
+      <div class="toolbar-content">
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/states" mode="md"></ion-back-button>
+        </ion-buttons>
+      </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="page-container">
+    <!-- Background image -->
+    <div class="background-section"></div>
+
+    <!-- Overlay list -->
+    <div class="overlay-section">
+      <div class="header-title">Available Garages</div>
+      <ion-list lines="none">
+        @for (garage of this.dataService.garages; track garage) {
+          <ion-card mode="md">
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://cdn-icons-png.flaticon.com/512/936/936862.png">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>{{garage.name}}</h2>
+          </ion-label>
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+          <!-- <ion-badge color="danger">Active</ion-badge> -->
+        </ion-item>
+      </ion-card>
+      }
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

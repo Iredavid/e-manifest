@@ -1,0 +1,142 @@
+<ion-menu menuId="first-menu" contentId="main-content">
+  <ion-header class="menu-header">
+    <ion-item lines="none" color="#6157F" class="profileview">
+      <ion-thumbnail slot="start">
+        <img class="image" alt="" src="assets/user.png" />
+      </ion-thumbnail>
+
+      <ion-label>
+        <strong style="color: aliceblue; font-size: larger"> </strong>
+        <p style="color: aliceblue"></p>
+      </ion-label>
+    </ion-item>
+    <div class="shape"></div>
+  </ion-header>
+
+  <ion-content>
+    <ion-list class="top">
+      <ion-item lines="none" class="menu-items">
+        <ion-icon
+          class="menu-icons"
+          name="bar-chart-outline"
+          slot="start"
+          id="profile-icons"
+        ></ion-icon>
+        <ion-label class="label-menu">Transfer Update</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="menu-items">
+        <ion-icon
+          class="menu-icons"
+          name="notifications-outline"
+          slot="start"
+          id="profile-icons"
+        ></ion-icon>
+        <ion-label class="label-menu">Notifications</ion-label>
+      </ion-item>
+      <ion-item lines="none" class="menu-items">
+        <ion-icon
+          class="menu-icons"
+          name="share-social-outline"
+          slot="start"
+          id="profile-icons"
+        ></ion-icon>
+        <ion-label class="label-menu">Share with friends</ion-label>
+      </ion-item>
+
+      <ion-accordion-group class="menu-items">
+        <ion-accordion value="first">
+          <ion-item slot="header">
+            <ion-icon
+              class="menu-icons"
+              name="bookmark-outline"
+              slot="start"
+              id="profile-icons"
+            ></ion-icon>
+
+            <ion-label class="label-menu">Favorites</ion-label>
+          </ion-item>
+          <div slot="content" class="accord">
+            <ion-item lines="none">
+              <ion-icon
+                name="football-outline"
+                slot="start"
+                id="profile-icons"
+              ></ion-icon>
+              <ion-label class="label-menu">Clubs</ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-icon
+                name="person-outline"
+                slot="start"
+                id="profile-icons"
+              ></ion-icon>
+              <ion-label class="label-menu">Players</ion-label>
+            </ion-item>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-list>
+
+    <ion-list class="bottom">
+      <ion-item lines="none" id="log">
+        <ion-icon
+          class="menu-icons"
+          name="log-out-outline"
+          slot="start"
+          id="profile-icons"
+        ></ion-icon>
+        <ion-label class="label-menu">Log out</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar>
+    <img
+      src="../../assets/png-transparent-add-image-icon (1).png"
+      alt=""
+      slot="start"
+      class="img"
+    />
+    <ion-avatar slot="end" class="profile-pic" (click)="openFirstMenu()">
+      <img src="../../assets/user.png" alt="" />
+    </ion-avatar>
+    <h4 class="ion-text-center">Welcome, ireoluwa</h4>
+  </ion-toolbar>
+
+
+</ion-header>
+
+<ion-content [fullscreen]="true" id="main-content">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="inner" routerLink="/states">
+          <h5>Travel</h5>
+          <img src="https://i.imgur.com/VAbQduR.png" alt="" class="inp" />
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="inner">
+          <h5>Safety</h5>
+          <img src="https://i.pinimg.com/736x/d8/7c/bd/d87cbd46b8568281ad7c0bec4915ed82.jpg" alt="" class="inp" />
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="inner">
+          <h5>Payments</h5>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/016/548/910/small_2x/3d-stacks-of-new-nigerian-naira-notes-png.png" alt="" class="inp" />
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="inner">
+          <h5>Complaints</h5>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/028/743/226/small_2x/hand-drawn-office-worker-with-headphones-in-concept-support-center-in-flat-style-png.png" alt="" class="inp" />
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

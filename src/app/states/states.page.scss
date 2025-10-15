@@ -1,0 +1,12 @@
+ion-searchbar{
+    --padding:0;
+    --box-shadow: none;
+    --border-radius: 8px;
+}
+ion-toolbar{
+    --background: #b82b34;
+    --color: white;
+}
+.searchbar-input.sc-ion-searchbar{
+    border: 3px solid black;
+}

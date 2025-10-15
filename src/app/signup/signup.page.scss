@@ -1,0 +1,162 @@
+.modal-content {
+    // background: white;
+    // width: 100%;
+    // max-width: 600px;
+    // margin: 0 auto;
+    // border-radius: 16px;
+    // box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    // overflow: hidden;
+  }
+
+  .signup-segment {
+    padding: 2rem 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .signup-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .signup-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--btn-color);
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .form-row .input-group {
+    flex: 1 1 calc(50% - 1rem);
+    min-width: 200px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .input-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .required::after {
+    content: '*';
+    color: var(--error-color);
+    margin-left: 2px;
+  }
+
+  .input-group input, 
+  .input-group ion-select {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #F5F5F5;
+    width: 100%;
+    border: none;
+  }
+
+  .input-group input:focus,
+  .input-group ion-select:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    background-color: white;
+  }
+
+  .input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 2.5rem;
+    color: #6b7280;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 1rem 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--light-gray);
+  }
+
+  .signup-btn {
+    --background: var(--btn-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
+  }
+
+  .signup-btn:hover {
+    background: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(16, 185, 129, 0.3);
+  }
+
+  .signup-btn:active {
+    transform: translateY(0);
+  }
+  h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 2rem 0 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .signup-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Custom select styling */
+  .input-group ion-select {
+    padding: 0.2rem;
+  }
+  ion-select::part(label) {
+    color: #919191;  
+    margin-left: 10px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .form-row .input-group {
+      flex: 1 1 100%;
+    }
+    
+    .signup-segment {
+      padding: 1rem;
+    }
+  }

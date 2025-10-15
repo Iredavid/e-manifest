@@ -1,0 +1,262 @@
+// /* Header */
+// .custom-header {
+//   --background: transparent;
+//   position: absolute;
+//   top: 2%;
+//   left: 0;
+//   right: 0;
+  
+// }
+// .toolbar-content {
+//   display: flex;
+//   align-items: center;
+//   width: 100%;
+// }
+// .custom-toolbar {
+//   --border-color: transparent !important;
+//   --background: transparent;
+//   --border-width: 0;
+//   --box-shadow: none;
+// }
+
+// ion-buttons {
+//   background: rgba(255, 255, 255, );
+//   border-radius: 50px;
+//   color: black;
+//   font-size: 2rem;
+//   width: fit-content;
+//   margin-left: 5px;
+// }
+// .header-title {
+//   // width: fit-content;
+//   height: auto;
+//   font-weight: 700;
+//   text-wrap: nowrap;
+//   font-size: 1.7rem;
+//   color: black;
+//   padding: 10px 15px;
+// }
+
+// /* Page container */
+// .page-container {
+//   position: relative;
+//   height: 100%;
+//   width: 100%;
+// }
+
+// /* Top image */
+// .background-section {
+//   height: 40%;
+//   background-image: url("https://www.bellanaija.com/wp-content/uploads/2014/09/lagbus-women-BellaNaija.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   filter: brightness(0.8);
+// }
+
+// /* Overlay bottom sheet */
+// .overlay-section {
+//   position: absolute;
+//   top: 35%;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: var(--ion-color-light);
+//   border-top-left-radius: 30px;
+//   border-top-right-radius: 30px;
+//   box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
+//   overflow-y: auto;
+//   padding-top: 1rem;
+// }
+
+// /* List styling */
+// ion-list {
+//   margin: 0;
+//   padding: 0;
+//   background: transparent;
+// }
+
+// ion-card {
+//   border-radius: 12px;
+//   // box-shadow: none;
+//   // box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+//   box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+//   // transition: transform 0.2s ease;
+// }
+
+// // ion-card:hover {
+// //   transform: translateY(-4px);
+// //   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+// // }
+
+// ion-label h2 {
+//   font-weight: 600;
+//   color: #111;
+// }
+
+// ion-label p {
+//   font-size: 0.85rem;
+//   color: #666;
+// }
+
+// /* Badges (red + secondary gray theme) */
+// ion-badge[color="danger"] {
+//   background: #e63946;
+//   color: #fff;
+//   font-weight: 600;
+//   border-radius: 8px;
+//   padding: 4px 8px;
+// }
+
+// ion-badge[color="medium"] {
+//   background: #adb5bd;
+//   color: #fff;
+//   border-radius: 8px;
+//   padding: 4px 8px;
+// }
+/* Header */
+.custom-header {
+    --background: transparent;
+    position: absolute;
+    top: 1.5%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .custom-toolbar {
+    --border-color: transparent !important;
+    --background: transparent;
+    --border-width: 0;
+    --box-shadow: none;
+  }
+  
+  .toolbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  ion-buttons {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    color: black;
+    font-size: 1.8rem;
+    // padding: 6px;
+    margin-left: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  
+  /* Title inside overlay */
+  .header-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    padding: 0.5rem 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Page container */
+  .page-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Top image */
+  .background-section {
+    height: 42%;
+    background-image: url("https://sdmntpritalynorth.oaiusercontent.com/files/00000000-0424-6246-94cf-183f1539cd83/raw?se=2025-09-24T18%3A50%3A37Z&sp=r&sv=2024-08-04&sr=b&scid=cf4e9b6e-cb7c-596c-8b38-6599dfb41577&skoid=82a3371f-2f6c-4f81-8a78-2701b362559b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-24T04%3A45%3A17Z&ske=2025-09-25T04%3A45%3A17Z&sks=b&skv=2024-08-04&sig=HBnnFqhwcTMyFNotNPxt/S7CadJi7TNiccu8d5XooVE%3D");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.9);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    // overflow: hidden;
+  }
+  
+  /* Overlay bottom sheet */
+  .overlay-section {
+    position: absolute;
+    top: 36%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0.2rem 2rem;
+  }
+  
+  /* List styling */
+  ion-list {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow-y: auto;
+  
+  }
+  
+  ion-card {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  ion-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  ion-item {
+    --background: transparent;
+    --inner-padding-end: 12px;
+    border-radius: 16px;
+  }
+  
+  ion-thumbnail img {
+    border-radius: 8px;
+    background: #f1f3f5;
+    padding: 4px;
+  }
+  
+  /* Text styles */
+  ion-label h2 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #222;
+  }
+  
+  ion-label p {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  /* End icon */
+  ion-icon[slot="end"] {
+    color: black;
+    font-size: 1.3rem;
+  }
+  
+  /* Badges */
+  ion-badge[color="danger"] {
+    background: #e63946;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 4px 8px;
+  }
+  
+  ion-badge[color="medium"] {
+    background: #adb5bd;
+    color: #fff;
+    border-radius: 8px;
+    padding: 4px 8px;
+  }
+  ion-content{
+    --overflow:clip;
+  }
+  

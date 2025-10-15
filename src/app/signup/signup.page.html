@@ -1,0 +1,91 @@
+<ion-content [fullscreen]="true">
+  <div class="signup-segment">
+    <h2 class="signup-title">Create an Account</h2>
+    <form action="" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <!-- First & Last Name -->
+      <div class="">
+
+        <div class="input-group">
+          <label class="input-label">First Name</label>
+          <input type="text" placeholder="Enter first name" formControlName="firstname" />
+        </div>
+        <div class="input-group">
+          <label class="input-label">Last Name</label>
+          <input type="text" placeholder="Enter last name" formControlName="lastname" />
+        </div>
+
+      <!-- Email -->
+      <div class="input-group">
+        <label class="input-label">Email</label>
+        <input type="email" placeholder="Enter email address" formControlName="email" />
+      </div>
+
+      <!-- Password -->
+      <div class="input-group">
+        <label class="input-label">Password</label>
+        <input type="password" placeholder="Enter password" formControlName="password" />
+      </div>
+      <!-- Sex & Phone Number -->
+      <!-- <div class=""> -->
+        <div class="input-group">
+          <label class="input-label">Sex</label>
+          <ion-select label="Select sex" formControlName="sex">
+            <ion-select-option value="male">Male</ion-select-option>
+            <ion-select-option value="female">Female</ion-select-option>
+          </ion-select>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Phone Number</label>
+          <input type="tel" placeholder="Enter phone number" formControlName="phonenumber" />
+        </div>
+      <!-- </div> -->
+
+      <!-- Blood Group & Genotype -->
+      <!-- <div class=""> -->
+        <div class="input-group">
+          <label class="input-label">Blood Group</label>
+          <ion-select label="Select blood group" formControlName="bloodgroup">
+            <ion-select-option value="A+">A+</ion-select-option>
+            <ion-select-option value="A-">A-</ion-select-option>
+            <ion-select-option value="B+">B+</ion-select-option>
+            <ion-select-option value="B-">B-</ion-select-option>
+            <ion-select-option value="AB+">AB+</ion-select-option>
+            <ion-select-option value="AB-">AB-</ion-select-option>
+            <ion-select-option value="O+">O+</ion-select-option>
+            <ion-select-option value="O-">O-</ion-select-option>
+          </ion-select>
+        </div>
+        <!-- <div class="input-group">
+                      <label class="input-label">Genotype</label>
+                      <ion-select placeholder="Select genotype" formControlName="genotype">
+                        <ion-select-option value="AA">AA</ion-select-option>
+                        <ion-select-option value="AS">AS</ion-select-option>
+                        <ion-select-option value="SS">SS</ion-select-option>
+                        <ion-select-option value="AC">AC</ion-select-option>
+                        <ion-select-option value="SC">SC</ion-select-option>
+                        <ion-select-option value="CC">CC</ion-select-option>
+                      </ion-select>
+                    </div> -->
+      <!-- </div> -->
+      </div>
+
+      <h4>Next Of Kin</h4>
+
+      <!-- NIN -->
+      <div class="input-group">
+        <label class="input-label">Name</label>
+        <input type="text" placeholder="Enter full name" formControlName="fullname" />
+      </div>
+
+      <!-- NIN -->
+      <div class="input-group">
+        <label class="input-label">Phone</label>
+        <input type="text" placeholder="Enter phone number" formControlName="phonenumber" />
+      </div>
+
+      <!-- Signup Button -->
+      <ion-button type="submit" expand="block" class="signup-btn" [disabled]="myForm.invalid">Sign
+        Up</ion-button>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <ion-header mode="ios">
+    <ion-toolbar>
+      <ion-buttons slot="start" mode="md">
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>States</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <!-- <ion-searchbar placeholder="search states..." mode="ios"></ion-searchbar> -->
+    <ion-list>
+      @for (item of this.dataService.states; track item) {
+      <ion-item (click)="goToGarages(item.id)">
+        <ion-label> {{item.name}} </ion-label>
+        <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+      </ion-item>
+      }
+    </ion-list>
+  </ion-content>
+</ion-content>
